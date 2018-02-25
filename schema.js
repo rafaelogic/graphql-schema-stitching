@@ -59,23 +59,8 @@ const userTypeDefs = `
 const typeDefs = `
 ${currencyTypeDefs}
 ${userTypeDefs}
-`
+`;
 
-// const resolvers = {
-//   Query: {
-//     users(parent, {}) {
-//       const data = values(sampleData.User);
-//       console.log(data);
-//       return sampleData.User;
-//     },
-//   },
-//
-//   User: {
-//     currency(parent) {
-//       return sampleData.Currency[parent.currency_id]
-//     },
-//   },
-// };
 const resolvers = {
   Query: {
     users:(parent) => {
